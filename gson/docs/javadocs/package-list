@@ -1,4 +1,4 @@
 com.google.gson
 com.google.gson.annotations
-com.google.gson.reflect
-com.google.gson.stream
+com.solidfire.gson.reflect
+com.solidfire.gson.stream

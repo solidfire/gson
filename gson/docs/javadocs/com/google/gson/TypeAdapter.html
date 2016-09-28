@@ -133,8 +133,8 @@ Converts Java objects to and from JSON.
  strings like <code>"5,8"</code> rather than objects like <code>{"x":5,"y":8}</code>. In
  this case the type adapter binds a rich Java class to a compact JSON value.
 
- <p>The <A HREF="../../../com/google/gson/TypeAdapter.html#read(com.google.gson.stream.JsonReader)"><CODE>read()</CODE></A> method must read exactly one value
- and <A HREF="../../../com/google/gson/TypeAdapter.html#write(com.google.gson.stream.JsonWriter, T)"><CODE>write()</CODE></A> must write exactly one value.
+ <p>The <A HREF="../../../com/google/gson/TypeAdapter.html#read(com.solidfire.gson.stream.JsonReader)"><CODE>read()</CODE></A> method must read exactly one value
+ and <A HREF="../../../com/google/gson/TypeAdapter.html#write(com.solidfire.gson.stream.JsonWriter, T)"><CODE>write()</CODE></A> must write exactly one value.
  For primitive types this is means readers should make exactly one call to
  <code>nextBoolean()</code>, <code>nextDouble()</code>, <code>nextInt()</code>, <code>nextLong()</code>, <code>nextString()</code> or <code>nextNull()</code>. Writers should make
  exactly one call to one of <code>value()</code> or <code>nullValue()</code>.
@@ -230,7 +230,7 @@ Converts Java objects to and from JSON.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>abstract &nbsp;<A HREF="../../../com/google/gson/TypeAdapter.html" title="type parameter in TypeAdapter">T</A></CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../com/google/gson/TypeAdapter.html#read(com.google.gson.stream.JsonReader)">read</A></B>(<A HREF="../../../com/google/gson/stream/JsonReader.html" title="class in com.google.gson.stream">JsonReader</A>&nbsp;in)</CODE>
+<TD><CODE><B><A HREF="../../../com/google/gson/TypeAdapter.html#read(com.solidfire.gson.stream.JsonReader)">read</A></B>(<A HREF="../../../com/google/gson/stream/JsonReader.html" title="class in com.solidfire.gson.stream">JsonReader</A>&nbsp;in)</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Reads one JSON value (an array, object, string, number, boolean or null)
@@ -264,7 +264,7 @@ Converts Java objects to and from JSON.
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>abstract &nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../com/google/gson/TypeAdapter.html#write(com.google.gson.stream.JsonWriter, T)">write</A></B>(<A HREF="../../../com/google/gson/stream/JsonWriter.html" title="class in com.google.gson.stream">JsonWriter</A>&nbsp;out,
+<TD><CODE><B><A HREF="../../../com/google/gson/TypeAdapter.html#write(com.solidfire.gson.stream.JsonWriter, T)">write</A></B>(<A HREF="../../../com/google/gson/stream/JsonWriter.html" title="class in com.solidfire.gson.stream">JsonWriter</A>&nbsp;out,
       <A HREF="../../../com/google/gson/TypeAdapter.html" title="type parameter in TypeAdapter">T</A>&nbsp;value)</CODE>
 
 <BR>
@@ -311,10 +311,10 @@ public <B>TypeAdapter</B>()</PRE>
 </TR>
 </TABLE>
 
-<A NAME="write(com.google.gson.stream.JsonWriter,java.lang.Object)"><!-- --></A><A NAME="write(com.google.gson.stream.JsonWriter, T)"><!-- --></A><H3>
+<A NAME="write(com.solidfire.gson.stream.JsonWriter,java.lang.Object)"><!-- --></A><A NAME="write(com.solidfire.gson.stream.JsonWriter, T)"><!-- --></A><H3>
 write</H3>
 <PRE>
-public abstract void <B>write</B>(<A HREF="../../../com/google/gson/stream/JsonWriter.html" title="class in com.google.gson.stream">JsonWriter</A>&nbsp;out,
+public abstract void <B>write</B>(<A HREF="../../../com/google/gson/stream/JsonWriter.html" title="class in com.solidfire.gson.stream">JsonWriter</A>&nbsp;out,
                            <A HREF="../../../com/google/gson/TypeAdapter.html" title="type parameter in TypeAdapter">T</A>&nbsp;value)
                     throws <A HREF="http://docs.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
@@ -339,7 +339,7 @@ public final void <B>toJson</B>(<A HREF="http://docs.oracle.com/javase/1.5.0/doc
 <DD>Converts <code>value</code> to a JSON document and writes it to <code>out</code>.
  Unlike Gson's similar <A HREF="../../../com/google/gson/Gson.html#toJson(com.google.gson.JsonElement, java.lang.Appendable)"><CODE>toJson</CODE></A>
  method, this write is strict. Create a <A HREF="../../../com/google/gson/stream/JsonWriter.html#setLenient(boolean)"><CODE>lenient</CODE></A> <code>JsonWriter</code> and call
- <A HREF="../../../com/google/gson/TypeAdapter.html#write(com.google.gson.stream.JsonWriter, T)"><CODE>write(com.google.gson.stream.JsonWriter, Object)</CODE></A> for lenient
+ <A HREF="../../../com/google/gson/TypeAdapter.html#write(com.solidfire.gson.stream.JsonWriter, T)"><CODE>write(com.solidfire.gson.stream.JsonWriter, Object)</CODE></A> for lenient
  writing.
 <P>
 <DD><DL>
@@ -405,7 +405,7 @@ public final <A HREF="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Str
                     throws <A HREF="http://docs.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
 <DD>Converts <code>value</code> to a JSON document. Unlike Gson's similar <A HREF="../../../com/google/gson/Gson.html#toJson(java.lang.Object)"><CODE>toJson</CODE></A> method, this write is strict. Create a <A HREF="../../../com/google/gson/stream/JsonWriter.html#setLenient(boolean)"><CODE>lenient</CODE></A> <code>JsonWriter</code> and call
- <A HREF="../../../com/google/gson/TypeAdapter.html#write(com.google.gson.stream.JsonWriter, T)"><CODE>write(com.google.gson.stream.JsonWriter, Object)</CODE></A> for lenient
+ <A HREF="../../../com/google/gson/TypeAdapter.html#write(com.solidfire.gson.stream.JsonWriter, T)"><CODE>write(com.solidfire.gson.stream.JsonWriter, Object)</CODE></A> for lenient
  writing.
 <P>
 <DD><DL>
@@ -434,10 +434,10 @@ public final <A HREF="../../../com/google/gson/JsonElement.html" title="class in
 </DL>
 <HR>
 
-<A NAME="read(com.google.gson.stream.JsonReader)"><!-- --></A><H3>
+<A NAME="read(com.solidfire.gson.stream.JsonReader)"><!-- --></A><H3>
 read</H3>
 <PRE>
-public abstract <A HREF="../../../com/google/gson/TypeAdapter.html" title="type parameter in TypeAdapter">T</A> <B>read</B>(<A HREF="../../../com/google/gson/stream/JsonReader.html" title="class in com.google.gson.stream">JsonReader</A>&nbsp;in)
+public abstract <A HREF="../../../com/google/gson/TypeAdapter.html" title="type parameter in TypeAdapter">T</A> <B>read</B>(<A HREF="../../../com/google/gson/stream/JsonReader.html" title="class in com.solidfire.gson.stream">JsonReader</A>&nbsp;in)
                 throws <A HREF="http://docs.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
 <DL>
 <DD>Reads one JSON value (an array, object, string, number, boolean or null)
@@ -461,7 +461,7 @@ public final <A HREF="../../../com/google/gson/TypeAdapter.html" title="type par
 <DD>Converts the JSON document in <code>in</code> to a Java object. Unlike Gson's
  similar <A HREF="../../../com/google/gson/Gson.html#fromJson(java.io.Reader, java.lang.Class)"><CODE>fromJson</CODE></A> method, this
  read is strict. Create a <A HREF="../../../com/google/gson/stream/JsonReader.html#setLenient(boolean)"><CODE>lenient</CODE></A>
- <code>JsonReader</code> and call <A HREF="../../../com/google/gson/TypeAdapter.html#read(com.google.gson.stream.JsonReader)"><CODE>read(JsonReader)</CODE></A> for lenient reading.
+ <code>JsonReader</code> and call <A HREF="../../../com/google/gson/TypeAdapter.html#read(com.solidfire.gson.stream.JsonReader)"><CODE>read(JsonReader)</CODE></A> for lenient reading.
 <P>
 <DD><DL>
 
@@ -482,7 +482,7 @@ public final <A HREF="../../../com/google/gson/TypeAdapter.html" title="type par
 <DL>
 <DD>Converts the JSON document in <code>json</code> to a Java object. Unlike Gson's
  similar <A HREF="../../../com/google/gson/Gson.html#fromJson(java.lang.String, java.lang.Class)"><CODE>fromJson</CODE></A> method, this read is
- strict. Create a <A HREF="../../../com/google/gson/stream/JsonReader.html#setLenient(boolean)"><CODE>lenient</CODE></A> <code>JsonReader</code> and call <A HREF="../../../com/google/gson/TypeAdapter.html#read(com.google.gson.stream.JsonReader)"><CODE>read(JsonReader)</CODE></A> for lenient reading.
+ strict. Create a <A HREF="../../../com/google/gson/stream/JsonReader.html#setLenient(boolean)"><CODE>lenient</CODE></A> <code>JsonReader</code> and call <A HREF="../../../com/google/gson/TypeAdapter.html#read(com.solidfire.gson.stream.JsonReader)"><CODE>read(JsonReader)</CODE></A> for lenient reading.
 <P>
 <DD><DL>
 

@@ -145,7 +145,7 @@ Creates type adapters for set of related types. Type adapter factories are
 
  <p>Type adapter factories select which types they provide type adapters
  for. If a factory cannot support a given type, it must return null when
- that type is passed to <A HREF="../../../com/google/gson/TypeAdapterFactory.html#create(com.google.gson.Gson, com.google.gson.reflect.TypeToken)"><CODE>create(com.google.gson.Gson, com.google.gson.reflect.TypeToken<T>)</CODE></A>. Factories should expect <code>create()</code> to be called on them for many types and should return null for
+ that type is passed to <A HREF="../../../com/google/gson/TypeAdapterFactory.html#create(com.google.gson.Gson, com.solidfire.gson.reflect.TypeToken)"><CODE>create(com.google.gson.Gson, com.solidfire.gson.reflect.TypeToken<T>)</CODE></A>. Factories should expect <code>create()</code> to be called on them for many types and should return null for
  most of those types. In the above example the factory returns null for
  calls to <code>create()</code> where <code>type</code> is not an enum.
 
@@ -254,8 +254,8 @@ Creates type adapters for set of related types. Type adapter factories are
 </TR>
 </TABLE>
 </CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../com/google/gson/TypeAdapterFactory.html#create(com.google.gson.Gson, com.google.gson.reflect.TypeToken)">create</A></B>(<A HREF="../../../com/google/gson/Gson.html" title="class in com.google.gson">Gson</A>&nbsp;gson,
-       <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.google.gson.reflect">TypeToken</A>&lt;T&gt;&nbsp;type)</CODE>
+<TD><CODE><B><A HREF="../../../com/google/gson/TypeAdapterFactory.html#create(com.google.gson.Gson, com.solidfire.gson.reflect.TypeToken)">create</A></B>(<A HREF="../../../com/google/gson/Gson.html" title="class in com.google.gson">Gson</A>&nbsp;gson,
+       <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.solidfire.gson.reflect">TypeToken</A>&lt;T&gt;&nbsp;type)</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a type adapter for <code>type</code>, or null if this factory doesn't
@@ -275,11 +275,11 @@ Creates type adapters for set of related types. Type adapter factories are
 </TR>
 </TABLE>
 
-<A NAME="create(com.google.gson.Gson, com.google.gson.reflect.TypeToken)"><!-- --></A><H3>
+<A NAME="create(com.solidfire.gson.Gson, com.solidfire.gson.reflect.TypeToken)"><!-- --></A><H3>
 create</H3>
 <PRE>
 &lt;T&gt; <A HREF="../../../com/google/gson/TypeAdapter.html" title="class in com.google.gson">TypeAdapter</A>&lt;T&gt; <B>create</B>(<A HREF="../../../com/google/gson/Gson.html" title="class in com.google.gson">Gson</A>&nbsp;gson,
-                          <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.google.gson.reflect">TypeToken</A>&lt;T&gt;&nbsp;type)</PRE>
+                          <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.solidfire.gson.reflect">TypeToken</A>&lt;T&gt;&nbsp;type)</PRE>
 <DL>
 <DD>Returns a type adapter for <code>type</code>, or null if this factory doesn't
  support <code>type</code>.

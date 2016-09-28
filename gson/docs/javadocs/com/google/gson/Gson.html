@@ -94,7 +94,7 @@ com.google.gson</FONT>
 Class Gson</H2>
 <PRE>
 <A HREF="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
-  <IMG SRC="../../../resources/inherit.gif" ALT="extended by "><B>com.google.gson.Gson</B>
+  <IMG SRC="../../../resources/inherit.gif" ALT="extended by "><B>com.solidfire.gson.Gson</B>
 </PRE>
 <HR>
 <DL>
@@ -143,7 +143,7 @@ This is the main class for using Gson. Gson is typically used by first construct
 <DL>
 <DT><B>Author:</B></DT>
   <DD>Inderjeet Singh, Joel Leitch, Jesse Wilson</DD>
-<DT><B>See Also:</B><DD><A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.google.gson.reflect"><CODE>TypeToken</CODE></A></DL>
+<DT><B>See Also:</B><DD><A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.solidfire.gson.reflect"><CODE>TypeToken</CODE></A></DL>
 <HR>
 
 <P>
@@ -216,7 +216,7 @@ This is the main class for using Gson. Gson is typically used by first construct
 </TR>
 </TABLE>
 </CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../com/google/gson/Gson.html#fromJson(com.google.gson.stream.JsonReader, java.lang.reflect.Type)">fromJson</A></B>(<A HREF="../../../com/google/gson/stream/JsonReader.html" title="class in com.google.gson.stream">JsonReader</A>&nbsp;reader,
+<TD><CODE><B><A HREF="../../../com/google/gson/Gson.html#fromJson(com.solidfire.gson.stream.JsonReader, java.lang.reflect.Type)">fromJson</A></B>(<A HREF="../../../com/google/gson/stream/JsonReader.html" title="class in com.solidfire.gson.stream">JsonReader</A>&nbsp;reader,
          <A HREF="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;typeOfT)</CODE>
 
 <BR>
@@ -314,7 +314,7 @@ This is the main class for using Gson. Gson is typically used by first construct
 </TR>
 </TABLE>
 </CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../com/google/gson/Gson.html#getAdapter(com.google.gson.reflect.TypeToken)">getAdapter</A></B>(<A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.google.gson.reflect">TypeToken</A>&lt;T&gt;&nbsp;type)</CODE>
+<TD><CODE><B><A HREF="../../../com/google/gson/Gson.html#getAdapter(com.solidfire.gson.reflect.TypeToken)">getAdapter</A></B>(<A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.solidfire.gson.reflect">TypeToken</A>&lt;T&gt;&nbsp;type)</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the type adapter for <code></code> type.</TD>
@@ -329,8 +329,8 @@ This is the main class for using Gson. Gson is typically used by first construct
 </TR>
 </TABLE>
 </CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../com/google/gson/Gson.html#getDelegateAdapter(com.google.gson.TypeAdapterFactory, com.google.gson.reflect.TypeToken)">getDelegateAdapter</A></B>(<A HREF="../../../com/google/gson/TypeAdapterFactory.html" title="interface in com.google.gson">TypeAdapterFactory</A>&nbsp;skipPast,
-                   <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.google.gson.reflect">TypeToken</A>&lt;T&gt;&nbsp;type)</CODE>
+<TD><CODE><B><A HREF="../../../com/google/gson/Gson.html#getDelegateAdapter(com.google.gson.TypeAdapterFactory, com.solidfire.gson.reflect.TypeToken)">getDelegateAdapter</A></B>(<A HREF="../../../com/google/gson/TypeAdapterFactory.html" title="interface in com.google.gson">TypeAdapterFactory</A>&nbsp;skipPast,
+                   <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.solidfire.gson.reflect">TypeToken</A>&lt;T&gt;&nbsp;type)</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method is used to get an alternate type adapter for the specified type.</TD>
@@ -355,8 +355,8 @@ This is the main class for using Gson. Gson is typically used by first construct
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>&nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../com/google/gson/Gson.html#toJson(com.google.gson.JsonElement, com.google.gson.stream.JsonWriter)">toJson</A></B>(<A HREF="../../../com/google/gson/JsonElement.html" title="class in com.google.gson">JsonElement</A>&nbsp;jsonElement,
-       <A HREF="../../../com/google/gson/stream/JsonWriter.html" title="class in com.google.gson.stream">JsonWriter</A>&nbsp;writer)</CODE>
+<TD><CODE><B><A HREF="../../../com/google/gson/Gson.html#toJson(com.google.gson.JsonElement, com.solidfire.gson.stream.JsonWriter)">toJson</A></B>(<A HREF="../../../com/google/gson/JsonElement.html" title="class in com.google.gson">JsonElement</A>&nbsp;jsonElement,
+       <A HREF="../../../com/google/gson/stream/JsonWriter.html" title="class in com.solidfire.gson.stream">JsonWriter</A>&nbsp;writer)</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes the JSON for <code>jsonElement</code> to <code>writer</code>.</TD>
@@ -402,9 +402,9 @@ This is the main class for using Gson. Gson is typically used by first construct
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
 <CODE>&nbsp;void</CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../com/google/gson/Gson.html#toJson(java.lang.Object, java.lang.reflect.Type, com.google.gson.stream.JsonWriter)">toJson</A></B>(<A HREF="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;src,
+<TD><CODE><B><A HREF="../../../com/google/gson/Gson.html#toJson(java.lang.Object, java.lang.reflect.Type, com.solidfire.gson.stream.JsonWriter)">toJson</A></B>(<A HREF="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;src,
        <A HREF="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;typeOfSrc,
-       <A HREF="../../../com/google/gson/stream/JsonWriter.html" title="class in com.google.gson.stream">JsonWriter</A>&nbsp;writer)</CODE>
+       <A HREF="../../../com/google/gson/stream/JsonWriter.html" title="class in com.solidfire.gson.stream">JsonWriter</A>&nbsp;writer)</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes the JSON representation of <code>src</code> of type <code>typeOfSrc</code> to
@@ -510,10 +510,10 @@ public <B>Gson</B>()</PRE>
 </TR>
 </TABLE>
 
-<A NAME="getAdapter(com.google.gson.reflect.TypeToken)"><!-- --></A><H3>
+<A NAME="getAdapter(com.solidfire.gson.reflect.TypeToken)"><!-- --></A><H3>
 getAdapter</H3>
 <PRE>
-public &lt;T&gt; <A HREF="../../../com/google/gson/TypeAdapter.html" title="class in com.google.gson">TypeAdapter</A>&lt;T&gt; <B>getAdapter</B>(<A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.google.gson.reflect">TypeToken</A>&lt;T&gt;&nbsp;type)</PRE>
+public &lt;T&gt; <A HREF="../../../com/google/gson/TypeAdapter.html" title="class in com.google.gson">TypeAdapter</A>&lt;T&gt; <B>getAdapter</B>(<A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.solidfire.gson.reflect">TypeToken</A>&lt;T&gt;&nbsp;type)</PRE>
 <DL>
 <DD>Returns the type adapter for <code></code> type.
 <P>
@@ -526,11 +526,11 @@ public &lt;T&gt; <A HREF="../../../com/google/gson/TypeAdapter.html" title="clas
 </DL>
 <HR>
 
-<A NAME="getDelegateAdapter(com.google.gson.TypeAdapterFactory, com.google.gson.reflect.TypeToken)"><!-- --></A><H3>
+<A NAME="getDelegateAdapter(com.solidfire.gson.TypeAdapterFactory, com.solidfire.gson.reflect.TypeToken)"><!-- --></A><H3>
 getDelegateAdapter</H3>
 <PRE>
 public &lt;T&gt; <A HREF="../../../com/google/gson/TypeAdapter.html" title="class in com.google.gson">TypeAdapter</A>&lt;T&gt; <B>getDelegateAdapter</B>(<A HREF="../../../com/google/gson/TypeAdapterFactory.html" title="interface in com.google.gson">TypeAdapterFactory</A>&nbsp;skipPast,
-                                             <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.google.gson.reflect">TypeToken</A>&lt;T&gt;&nbsp;type)</PRE>
+                                             <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.solidfire.gson.reflect">TypeToken</A>&lt;T&gt;&nbsp;type)</PRE>
 <DL>
 <DD>This method is used to get an alternate type adapter for the specified type. This is used
  to access a type adapter that is overridden by a <A HREF="../../../com/google/gson/TypeAdapterFactory.html" title="interface in com.google.gson"><CODE>TypeAdapterFactory</CODE></A> that you
@@ -572,7 +572,7 @@ public &lt;T&gt; <A HREF="../../../com/google/gson/TypeAdapter.html" title="clas
 <DD><DL>
 <DT><B>Parameters:</B><DD><CODE>skipPast</CODE> - The type adapter factory that needs to be skipped while searching for
    a matching type adapter. In most cases, you should just pass <i>this</i> (the type adapter
-   factory from where <A HREF="../../../com/google/gson/Gson.html#getDelegateAdapter(com.google.gson.TypeAdapterFactory, com.google.gson.reflect.TypeToken)"><CODE>getDelegateAdapter(com.google.gson.TypeAdapterFactory, com.google.gson.reflect.TypeToken<T>)</CODE></A> method is being invoked).<DD><CODE>type</CODE> - Type for which the delegate adapter is being searched for.<DT><B>Since:</B></DT>
+   factory from where <A HREF="../../../com/google/gson/Gson.html#getDelegateAdapter(com.google.gson.TypeAdapterFactory, com.solidfire.gson.reflect.TypeToken)"><CODE>getDelegateAdapter(com.google.gson.TypeAdapterFactory, com.solidfire.gson.reflect.TypeToken<T>)</CODE></A> method is being invoked).<DD><CODE>type</CODE> - Type for which the delegate adapter is being searched for.<DT><B>Since:</B></DT>
   <DD>2.2</DD>
 </DL>
 </DD>
@@ -630,7 +630,7 @@ public <A HREF="../../../com/google/gson/JsonElement.html" title="class in com.g
 <P>
 <DD><DL>
 <DT><B>Parameters:</B><DD><CODE>src</CODE> - the object for which JSON representation is to be created<DD><CODE>typeOfSrc</CODE> - The specific genericized type of src. You can obtain
- this type by using the <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.google.gson.reflect"><CODE>TypeToken</CODE></A> class. For example,
+ this type by using the <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.solidfire.gson.reflect"><CODE>TypeToken</CODE></A> class. For example,
  to get the type for <code>Collection&lt;Foo&gt;</code>, you should use:
  <pre>
  Type typeOfSrc = new TypeToken&lt;Collection&lt;Foo&gt;&gt;(){}.getType();
@@ -676,7 +676,7 @@ public <A HREF="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.ht
 <P>
 <DD><DL>
 <DT><B>Parameters:</B><DD><CODE>src</CODE> - the object for which JSON representation is to be created<DD><CODE>typeOfSrc</CODE> - The specific genericized type of src. You can obtain
- this type by using the <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.google.gson.reflect"><CODE>TypeToken</CODE></A> class. For example,
+ this type by using the <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.solidfire.gson.reflect"><CODE>TypeToken</CODE></A> class. For example,
  to get the type for <code>Collection&lt;Foo&gt;</code>, you should use:
  <pre>
  Type typeOfSrc = new TypeToken&lt;Collection&lt;Foo&gt;&gt;(){}.getType();
@@ -725,7 +725,7 @@ public void <B>toJson</B>(<A HREF="http://docs.oracle.com/javase/1.5.0/docs/api/
 <P>
 <DD><DL>
 <DT><B>Parameters:</B><DD><CODE>src</CODE> - the object for which JSON representation is to be created<DD><CODE>typeOfSrc</CODE> - The specific genericized type of src. You can obtain
- this type by using the <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.google.gson.reflect"><CODE>TypeToken</CODE></A> class. For example,
+ this type by using the <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.solidfire.gson.reflect"><CODE>TypeToken</CODE></A> class. For example,
  to get the type for <code>Collection&lt;Foo&gt;</code>, you should use:
  <pre>
  Type typeOfSrc = new TypeToken&lt;Collection&lt;Foo&gt;&gt;(){}.getType();
@@ -738,12 +738,12 @@ public void <B>toJson</B>(<A HREF="http://docs.oracle.com/javase/1.5.0/docs/api/
 </DL>
 <HR>
 
-<A NAME="toJson(java.lang.Object, java.lang.reflect.Type, com.google.gson.stream.JsonWriter)"><!-- --></A><H3>
+<A NAME="toJson(java.lang.Object, java.lang.reflect.Type, com.solidfire.gson.stream.JsonWriter)"><!-- --></A><H3>
 toJson</H3>
 <PRE>
 public void <B>toJson</B>(<A HREF="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;src,
                    <A HREF="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;typeOfSrc,
-                   <A HREF="../../../com/google/gson/stream/JsonWriter.html" title="class in com.google.gson.stream">JsonWriter</A>&nbsp;writer)
+                   <A HREF="../../../com/google/gson/stream/JsonWriter.html" title="class in com.solidfire.gson.stream">JsonWriter</A>&nbsp;writer)
             throws <A HREF="../../../com/google/gson/JsonIOException.html" title="class in com.google.gson">JsonIOException</A></PRE>
 <DL>
 <DD>Writes the JSON representation of <code>src</code> of type <code>typeOfSrc</code> to
@@ -773,7 +773,7 @@ public <A HREF="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.ht
 </DL>
 <HR>
 
-<A NAME="toJson(com.google.gson.JsonElement, java.lang.Appendable)"><!-- --></A><H3>
+<A NAME="toJson(com.solidfire.gson.JsonElement, java.lang.Appendable)"><!-- --></A><H3>
 toJson</H3>
 <PRE>
 public void <B>toJson</B>(<A HREF="../../../com/google/gson/JsonElement.html" title="class in com.google.gson">JsonElement</A>&nbsp;jsonElement,
@@ -792,11 +792,11 @@ public void <B>toJson</B>(<A HREF="../../../com/google/gson/JsonElement.html" ti
 </DL>
 <HR>
 
-<A NAME="toJson(com.google.gson.JsonElement, com.google.gson.stream.JsonWriter)"><!-- --></A><H3>
+<A NAME="toJson(com.solidfire.gson.JsonElement, com.solidfire.gson.stream.JsonWriter)"><!-- --></A><H3>
 toJson</H3>
 <PRE>
 public void <B>toJson</B>(<A HREF="../../../com/google/gson/JsonElement.html" title="class in com.google.gson">JsonElement</A>&nbsp;jsonElement,
-                   <A HREF="../../../com/google/gson/stream/JsonWriter.html" title="class in com.google.gson.stream">JsonWriter</A>&nbsp;writer)
+                   <A HREF="../../../com/google/gson/stream/JsonWriter.html" title="class in com.solidfire.gson.stream">JsonWriter</A>&nbsp;writer)
             throws <A HREF="../../../com/google/gson/JsonIOException.html" title="class in com.google.gson">JsonIOException</A></PRE>
 <DL>
 <DD>Writes the JSON for <code>jsonElement</code> to <code>writer</code>.
@@ -849,7 +849,7 @@ public &lt;T&gt; T <B>fromJson</B>(<A HREF="http://docs.oracle.com/javase/1.5.0/
 <P>
 <DD><DL>
 <DT><B>Type Parameters:</B><DD><CODE>T</CODE> - the type of the desired object<DT><B>Parameters:</B><DD><CODE>json</CODE> - the string from which the object is to be deserialized<DD><CODE>typeOfT</CODE> - The specific genericized type of src. You can obtain this type by using the
- <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.google.gson.reflect"><CODE>TypeToken</CODE></A> class. For example, to get the type for
+ <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.solidfire.gson.reflect"><CODE>TypeToken</CODE></A> class. For example, to get the type for
  <code>Collection&lt;Foo&gt;</code>, you should use:
  <pre>
  Type typeOfT = new TypeToken&lt;Collection&lt;Foo&gt;&gt;(){}.getType();
@@ -906,7 +906,7 @@ public &lt;T&gt; T <B>fromJson</B>(<A HREF="http://docs.oracle.com/javase/1.5.0/
 <P>
 <DD><DL>
 <DT><B>Type Parameters:</B><DD><CODE>T</CODE> - the type of the desired object<DT><B>Parameters:</B><DD><CODE>json</CODE> - the reader producing Json from which the object is to be deserialized<DD><CODE>typeOfT</CODE> - The specific genericized type of src. You can obtain this type by using the
- <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.google.gson.reflect"><CODE>TypeToken</CODE></A> class. For example, to get the type for
+ <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.solidfire.gson.reflect"><CODE>TypeToken</CODE></A> class. For example, to get the type for
  <code>Collection&lt;Foo&gt;</code>, you should use:
  <pre>
  Type typeOfT = new TypeToken&lt;Collection&lt;Foo&gt;&gt;(){}.getType();
@@ -921,10 +921,10 @@ public &lt;T&gt; T <B>fromJson</B>(<A HREF="http://docs.oracle.com/javase/1.5.0/
 </DL>
 <HR>
 
-<A NAME="fromJson(com.google.gson.stream.JsonReader, java.lang.reflect.Type)"><!-- --></A><H3>
+<A NAME="fromJson(com.solidfire.gson.stream.JsonReader, java.lang.reflect.Type)"><!-- --></A><H3>
 fromJson</H3>
 <PRE>
-public &lt;T&gt; T <B>fromJson</B>(<A HREF="../../../com/google/gson/stream/JsonReader.html" title="class in com.google.gson.stream">JsonReader</A>&nbsp;reader,
+public &lt;T&gt; T <B>fromJson</B>(<A HREF="../../../com/google/gson/stream/JsonReader.html" title="class in com.solidfire.gson.stream">JsonReader</A>&nbsp;reader,
                       <A HREF="http://docs.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;typeOfT)
            throws <A HREF="../../../com/google/gson/JsonIOException.html" title="class in com.google.gson">JsonIOException</A>,
                   <A HREF="../../../com/google/gson/JsonSyntaxException.html" title="class in com.google.gson">JsonSyntaxException</A></PRE>
@@ -942,7 +942,7 @@ public &lt;T&gt; T <B>fromJson</B>(<A HREF="../../../com/google/gson/stream/Json
 </DL>
 <HR>
 
-<A NAME="fromJson(com.google.gson.JsonElement, java.lang.Class)"><!-- --></A><H3>
+<A NAME="fromJson(com.solidfire.gson.JsonElement, java.lang.Class)"><!-- --></A><H3>
 fromJson</H3>
 <PRE>
 public &lt;T&gt; T <B>fromJson</B>(<A HREF="../../../com/google/gson/JsonElement.html" title="class in com.google.gson">JsonElement</A>&nbsp;json,
@@ -969,7 +969,7 @@ public &lt;T&gt; T <B>fromJson</B>(<A HREF="../../../com/google/gson/JsonElement
 </DL>
 <HR>
 
-<A NAME="fromJson(com.google.gson.JsonElement, java.lang.reflect.Type)"><!-- --></A><H3>
+<A NAME="fromJson(com.solidfire.gson.JsonElement, java.lang.reflect.Type)"><!-- --></A><H3>
 fromJson</H3>
 <PRE>
 public &lt;T&gt; T <B>fromJson</B>(<A HREF="../../../com/google/gson/JsonElement.html" title="class in com.google.gson">JsonElement</A>&nbsp;json,
@@ -983,7 +983,7 @@ public &lt;T&gt; T <B>fromJson</B>(<A HREF="../../../com/google/gson/JsonElement
 <DD><DL>
 <DT><B>Type Parameters:</B><DD><CODE>T</CODE> - the type of the desired object<DT><B>Parameters:</B><DD><CODE>json</CODE> - the root of the parse tree of <A HREF="../../../com/google/gson/JsonElement.html" title="class in com.google.gson"><CODE>JsonElement</CODE></A>s from which the object is to
  be deserialized<DD><CODE>typeOfT</CODE> - The specific genericized type of src. You can obtain this type by using the
- <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.google.gson.reflect"><CODE>TypeToken</CODE></A> class. For example, to get the type for
+ <A HREF="../../../com/google/gson/reflect/TypeToken.html" title="class in com.solidfire.gson.reflect"><CODE>TypeToken</CODE></A> class. For example, to get the type for
  <code>Collection&lt;Foo&gt;</code>, you should use:
  <pre>
  Type typeOfT = new TypeToken&lt;Collection&lt;Foo&gt;&gt;(){}.getType();
