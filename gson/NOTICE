@@ -1,0 +1,15 @@
+ SolidFire Gson
+ Copyright 2016 NetApp Inc.
+
+ This product includes software developed at
+ Google, Inc
+
+ This software is identical to the GSON library
+ developed by Google, Inc. except the namespace
+ has been changed to com.solidfire to prevent
+ class loader collisions with other software
+ using older versions of GSON.
+
+ This library should only be used by the
+ jsvcgen-java-client for json serialization/
+ deserialization.
